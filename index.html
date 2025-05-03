@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>To-Do App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- AUTH SECTION -->
+   <p id="header">Todo App</p>
+   
+  <div id="loginSection" style="display: none;">
+    <div id="loginForm">
+      <h3>Login</h3>
+      <input type="text" id="usernameInput" placeholder="Username">
+      <input type="password" id="passwordInput" placeholder="Password">
+      <button onclick="login()">Login</button>
+      <p>New user? <a href="#" onclick="showSignupForm()">Sign up</a></p>
+    </div>
+
+    <div id="signupForm" style="display: none;">
+      <h3>Sign Up</h3>
+      <input type="text" id="newUsername" placeholder="New username">
+      <input type="password" id="newPassword" placeholder="Password">
+      <button onclick="signup()">Sign Up</button>
+      <p>Already have an account? <a href="#" onclick="showLoginForm()">Login here</a></p>
+    </div>
+  </div>
+
+  <!-- TODO SECTION -->
+  <div id="todoSection" style="display: none;">
+    <h2 id="username"></h2>
+    <h2>To-Do List</h2>
+    <button onclick="logout()" style="float: right;">Logout</button>
+    <button onclick="showLoginPage()" id="loginBtn" style="float: right; display: none;">Login</button>
+    <input type="text" id="taskInput" placeholder="Enter a new task">
+    <button onclick="addTask()" style="float:right">Add</button>
+    <div>
+      <label for="filterSelect">Filter:</label>
+      <select id="filterSelect" onchange="renderTasks()">
+        <option value="all">All</option>
+        <option value="completed">Completed</option>
+        <option value="incomplete">Incomplete</option>
+      </select>
+    </div>
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

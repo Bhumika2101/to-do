@@ -1,0 +1,137 @@
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    background-color: rgb(246, 226, 226);
+  }
+
+  #loginSection {
+    max-width: 300px;
+    margin: auto;
+    padding: 20px;
+  }
+  #loginForm, #signupForm {
+    margin-bottom: 20px;
+    background-color: #cecfea;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+  }
+  
+
+  #loginSection, #todoSection {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+
+  input[type="text"] {
+    padding: 8px;
+    margin: 5px 0;
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+  }
+
+  ul#taskList {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    background-color: #f9f9f9;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  li input[type="text"] {
+    flex: 1;
+    border: none;
+    background: none;
+  }
+
+  li input[type="text"]:not([readonly]) {
+    background-color: #fff8dc;
+    border: 1px solid #ccc;
+  }
+
+  .completed {
+    text-decoration: line-through;
+    color: gray;
+  }
+
+  .button-group {
+    display: flex;
+    gap: 5px;
+  }
+
+  .button-group button {
+    padding: 4px 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #4b9df5;
+    color: white;
+    border-radius: 5px;
+  }
+
+  .button-group button:hover {
+    background-color: #0056b3;
+  }
+
+  button {
+    padding: 8px 12px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #218838;
+  }
+
+  button:last-child {
+    background-color: #dc3545;
+  }
+
+  button:last-child:hover {
+    background-color: #c82333;
+  }
+  select {
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+  #todoSection {
+    display: none;
+    background-color:#cecfea;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  #taskinput {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+#header {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #8d1313;
+  font-style: italic;
+  font-weight: bold;
+}
+
+#username {
+  font-size: 20px;
+  color: #2d69a8;
+  margin-bottom: 10px;
+}
